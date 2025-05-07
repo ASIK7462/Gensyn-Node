@@ -1,0 +1,53 @@
+Gensyn Node (RL-SWARM) - Complete Setup Guide
+
+Step 1: Install Python and Essential Tools
+------------------------------------------
+sudo apt update && sudo apt install -y python3 python3-venv python3-pip curl wget screen git lsof
+python3 --version
+
+Step 2: Install Node.js, npm, and Yarn
+--------------------------------------
+curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+sudo apt update && sudo apt install -y nodejs
+
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list > /dev/null
+sudo apt update && sudo apt install -y yarn
+
+node -v
+npm -v
+yarn -v
+
+Step 3: Clone RL-SWARM Repo and Set Up Environment
+--------------------------------------------------
+git clone https://github.com/gensyn-ai/rl-swarm.git
+cd rl-swarm
+python3 -m venv .venv
+source .venv/bin/activate
+cd modal-login
+yarn install
+yarn upgrade
+yarn add next@latest viem@latest
+
+Step 4: Start a Screen Session (Optional)
+-----------------------------------------
+screen -S gensyn
+
+Step 5: Pull Latest Code
+------------------------
+git pull
+# or if needed
+git reset --hard HEAD
+git pull
+
+Step 6: Run the Swarm Node
+--------------------------
+cd ..
+./run_rl_swarm.sh
+
+Optional: Use Ngrok to Expose Localhost
+---------------------------------------
+wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz
+tar -xvzf ngrok-v3-stable-linux-amd64.tgz
+sudo mv ngrok /usr/local/bin/
+ngrok http 3000
