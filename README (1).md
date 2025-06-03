@@ -87,7 +87,7 @@ source .venv/bin/activate
 
 Open a **new terminal tab/session**, then run:
 
-```cloudflared tunnel --url http://localhost:3000
+``` cloudflared tunnel --url http://localhost:3000
 ```
 
 Use the generated link in your browser to log in with **Gmail** and complete **OTP verification**.
