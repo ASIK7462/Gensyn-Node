@@ -87,7 +87,8 @@ source .venv/bin/activate
 
 Open a **new terminal tab/session**, then run:
 
-```sudo apt install ufw -y && sudo ufw allow 22 && sudo ufw allow 3000/tcp && sudo ufw --force enable && wget -q https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb && sudo dpkg -i cloudflared-linux-amd64.deb && cloudflared tunnel --url http://localhost:3000
+```
+sudo apt install ufw -y && sudo ufw allow 22 && sudo ufw allow 3000/tcp && sudo ufw --force enable && wget -q https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb && sudo dpkg -i cloudflared-linux-amd64.deb && cloudflared tunnel --url http://localhost:3000
 ```
 
 Use the generated link in your browser to log in with **Gmail** and complete **OTP verification**.
