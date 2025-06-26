@@ -31,9 +31,10 @@ curl https://raw.githubusercontent.com/imysryasir/Gsnyn-1-Click-Solutions/refs/h
 
 ```bash
 cd rl-swarm
+git switch main
 git reset --hard
+git clean -fd
 git pull origin main
-git checkout tags/v0.4.3
 ```
 
 ---
