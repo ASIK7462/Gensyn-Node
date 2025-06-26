@@ -79,8 +79,8 @@ source .venv/bin/activate
 ./run_rl_swarm.sh
 ```
 
-- **Select Option:** `MATH-A`  
-- **Input Value:** `0.5`
+- **HUGGING FACE:** `N`  
+- **CHOOSE MODEL:** `Press Enter`
 
 ---
 
