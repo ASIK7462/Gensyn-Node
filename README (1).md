@@ -118,4 +118,4 @@ After approximately **1–2 hours**, you’ll see an option on screen:
 ## 📢 Stay Connected
 
 - **Twitter (X):** [@AR74622](https://x.com/AR74622)  
-- **Reward Check Bot (Telegram):** [@Gensyn_track_bot](https://t.me/Gensyn_track_bot)
+- **Dashboard:** - https://dashboard.gensyn.ai
