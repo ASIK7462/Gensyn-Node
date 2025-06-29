@@ -1,16 +1,15 @@
 # 🚀 GENSYN RL-SWARM 0.5.1 — Step-by-Step Setup Guide
 
-A simple and clean guide to install and run a Gensyn RL-Swarm node on your Ubuntu VPS (20.04+).  
+A simple and clean guide to install and run a Gensyn RL-Swarm node on your Ubuntu VPS (22.04+).  
 Includes system setup, model selection, and tunnel access via Cloudflare.
 
 ---
 
 ## ✅ Prerequisites
 
-- A fresh Ubuntu VPS (recommended 20.04 or later)
-- Root or sudo user access
-- Internet connection
-- PEM file (if required by the task)
+- A fresh Ubuntu VPS (recommended 22.04 or later)
+- 32GB RAM
+- 250 GB SSD
 
 ---
 
@@ -96,7 +95,7 @@ cloudflared tunnel --url http://localhost:3000
 ## 📌 Notes
 
 - Detach from any screen session with: `Ctrl + A`, then `D`
-- To reattach a screen: `screen -r <name>`
+- To reattach a screen: `screen -r gensyn`
 - Official Repo: [Gensyn RL-Swarm](https://github.com/gensyn-ai/rl-swarm)
 
 ---
