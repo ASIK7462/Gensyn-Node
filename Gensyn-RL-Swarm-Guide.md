@@ -45,6 +45,10 @@ screen -S gensyn
 ```bash
 git clone https://github.com/gensyn-ai/rl-swarm
 cd rl-swarm
+git switch main
+git reset --hard
+git clean -fd
+git pull origin main
 ```
 
 > ⚠️ **Note:** Import your `.pem` file here if required.
