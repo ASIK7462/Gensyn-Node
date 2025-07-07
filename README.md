@@ -1,4 +1,4 @@
-# 🚀 GENSYN RL-SWARM — CLEAN INSTALLATION & SETUP GUIDE
+# 🚀 GENSYN RL-SWARM — CLEAN INSTALLATION & SETUP GUIDE (0.5.1)
 
 ## 🔄 Step 1: Clean Up Old Setup
 
