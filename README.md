@@ -74,13 +74,13 @@ cloudflared tunnel --url http://localhost:3000
 If your node is crashing, run the following command to increase the timeout:
 
 ```bash
-sed -i 's/startup_timeout: float = *15/startup_timeout: float = 120/' ~/rl-swarm/.venv/lib/python3.12/site-packages/hivemind/p2p/p2p_daemon.py
+sed -i -E 's/(num_train_samples:\s*)2/\1 1/' rgym_exp/config/rg-swarm.yaml
 ```
 
 Then re-run the swarm:
 
 ```bash
-./run_rl_swarm.sh
+bash run_rl_swarm.sh
 ```
 
 ---
