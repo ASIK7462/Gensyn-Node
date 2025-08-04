@@ -74,12 +74,8 @@ cloudflared tunnel --url http://localhost:3000
 If your node is crashing, run the following command to increase the timeout:
 
 ```bash
-sed -i -E 's/(num_train_samples:\s*)2/\1 1/' rgym_exp/config/rg-swarm.yaml
-```
-
-Then re-run the swarm:
-
-```bash
+pip install --force-reinstall transformers==4.51.3 trl==0.19.1
+pip freeze
 bash run_rl_swarm.sh
 ```
 
